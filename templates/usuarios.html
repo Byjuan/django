@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Genero</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">C.I</th>
+      </tr>
+    </thead>
+    <tbody>
+
+     {% for usr in usr_list %}
+
+
+      <tr>
+
+        <td>{{usr.nombre}}</td>
+        <td>{{usr.profesion}}</td>
+        <td>{{usr.ciudad}}</td>
+        <td><img src="{{usr.photos.url}}"></td>
+      </tr>
+      
+      {% endfor %}
+    </tbody>
+  </table>
